@@ -1,0 +1,40 @@
+{
+  "name": "google-lighthouse-with-puppeter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test1": "node ./tests/exampletest.js",
+    "test2": "node ./tests/exampletest2.js --multi",
+    "test3": "npx lighthouse https://lz1public-uat.staysuregroup.com/cover-type/ --output html --output-path ./report.html --view true",
+    "testSample": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests",
+    "test4": "node ./tests/test3.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TharushikaR/Google-Lighthouse-with-Puppeter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TharushikaR/Google-Lighthouse-with-Puppeter/issues"
+  },
+  "homepage": "https://github.com/TharushikaR/Google-Lighthouse-with-Puppeter#readme",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "chai": "^5.1.1",
+    "fs": "^0.0.1-security",
+    "fs-js": "^1.0.6",
+    "google-lighthouse-puppeteer": "^1.4.0",
+    "lighthouse-batch": "^8.1.1",
+    "mocha": "^10.4.0",
+    "puppeteer": "^22.10.0",
+    "request": "^2.88.0",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "lighthouse": "^12.0.0"
+  }
+}
