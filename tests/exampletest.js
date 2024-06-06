@@ -77,11 +77,9 @@ import { writeFile } from "fs";
   });
 
   const html = ReportGenerator.generateReport(report.lhr, "html");
-  // const html = new ReportGenerator(report.lhr, 'html');
-  // const reportHtml = ReportGenerator.generateReport(lighthouseResult.lhr, 'html');
   const json = ReportGenerator.generateReport(report.lhr, "json");
 
-  // console.log(`Lighthouse score: ${report.lhr.score}`);
+  console.log(`Lighthouse score: ${report.lhr.score}`);
   await page.goto(logoutURL, { waitUntil: "networkidle2" });
 
   await browser.disconnect();
